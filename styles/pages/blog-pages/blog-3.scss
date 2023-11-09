@@ -1,0 +1,27 @@
+@import "../../../index.scss";
+@import "../blog.scss";
+
+.btn-div {
+  border-bottom: 1px solid $color-secondary-text;
+
+  a {
+    color: $color-secondary-text;
+    text-decoration: none;
+    font-size: 1.4rem;
+  }
+
+  a:hover {
+    background-color: $color-border-light;
+  }
+}
+
+main {
+  .blog {
+    .blog-container {
+      .blog-box {
+        width: 50vw;
+      }
+      
+    }
+  }
+}

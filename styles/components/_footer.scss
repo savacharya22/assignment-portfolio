@@ -1,0 +1,34 @@
+@import '../defaults/colors';
+@import '../defaults/breakpoints';
+
+footer {
+    margin-top: 8rem;
+    background-color: $color-primary;
+    // padding-top: 6.4rem;
+    text-align: center;
+    border-top: 2px solid #000;
+   
+    box-shadow: -1px 1px 28px 2px rgba(0, 0, 0, 0.79);
+    -webkit-box-shadow: -1px 1px 28px 2px rgba(0, 0, 0, 0.79);
+    -moz-box-shadow: -1px 1px 28px 2px rgba(0, 0, 0, 0.79);
+  
+    .social-media {
+      display: flex;
+      justify-content: space-around;
+    //   margin-bottom: 16px;
+  
+      a {
+        i {
+          font-size: 2.4rem;
+          color: #1f1c24;
+        }
+      }
+    }
+  
+    .info {
+      font-size: 1.2rem;
+      margin-top: 0.8rem;
+      color: $color-main-text;
+    }
+  }
+  

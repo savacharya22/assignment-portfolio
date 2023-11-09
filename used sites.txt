@@ -1,0 +1,3 @@
+namechip.com
+cdnjs/libraries/font-awsome
+fontawesome.com

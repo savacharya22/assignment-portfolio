@@ -1,0 +1,83 @@
+@import "../../index";
+
+main {
+
+
+    .about-heading {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      flex-direction: column;
+    
+      
+
+      h1 {
+        border-bottom: 2px solid $color-border-light;
+
+        margin: 2rem;
+        padding: 1.2rem;
+      }
+    }
+
+    .container {
+        width: 80%;
+        margin: 0 auto;
+        padding: 1rem, 2rem;
+
+      .about {
+          display: flex;
+          justify-content: space-between;
+          align-items: center;
+          flex-wrap: wrap;
+       
+        .profile-img {
+
+          flex: 1;
+          margin-right: 4rem;
+          overflow: hidden;
+          border-radius: 8px;
+          
+          img {
+
+            width: 100%;
+            height: auto;
+            display: block;
+            transition: 1s ease;
+          }
+
+          img:hover {
+            transform: scale(1.1);
+          }
+        }
+
+        .main-text {
+
+          flex: 1;
+        
+
+          h2 {
+              font-size: 1.6rem;
+          }
+          p {
+
+            font-size: 1.2rem;
+            line-height: 1.5;
+          }
+          a {
+
+            font-size: 1.3rem;
+          }
+
+          a:hover {
+            background-color: $color-primary;
+          }
+        }
+      }
+    }
+  }
+
+  @media screen and (max-width: 800px) {
+     .about {
+      flex-direction: column;
+     }
+  }

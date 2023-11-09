@@ -1,0 +1,58 @@
+@import '../defaults/colors';
+@import '../defaults/breakpoints';
+
+header {
+   
+    padding-top: 1.4rem;
+     text-align: center;
+    
+     background-color: $color-primary;
+     .logo {
+         // background-color: $color-primary;
+         margin-bottom: 1.6rem;
+             a{
+                 .fa-medium {
+                     font-size: 1.8rem;
+                 }
+             }
+     }
+ 
+     nav {
+         border: 2px solid red;
+         padding: 1.2rem 0;
+         background-color: $color-secondary;
+         display: flex;
+         justify-content: space-around;
+        
+     
+         a {
+             color: $color-main-text;
+             text-decoration: none;
+             font-size: 1.6rem;
+             position: relative;
+             transition: all ease .2s;
+ 
+         }
+         a:hover {
+             font-size: 1.3rem;;
+         }
+ 
+         a::after  {
+             content: '';
+             position: absolute;
+             bottom: 0;
+             left: 0;
+             height: 3px;
+             width: 100%;
+             background-color: $color-secondary-1;
+             transform: scaleX(0);
+             transform-origin: left;
+             transition: transform .3s;;
+         }
+ 
+         a:hover::after {
+             transform: scaleX(1);
+            
+         }
+     }
+ }
