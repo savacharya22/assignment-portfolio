@@ -1,5 +1,6 @@
 @import "../../../index.scss";
-@import "../blog-pages/blog-3.css"
+@import "../blog-pages/blog-3.css";
+
 .btn-div {
   border-bottom: 1px solid $color-secondary-text;
 
@@ -18,7 +19,7 @@ main {
   .blog {
     .blog-container {
       .blog-box {
-        width: 70vw;
+        width: 60vw;
       }
       
     }
