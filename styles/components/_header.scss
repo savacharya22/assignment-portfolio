@@ -1,58 +1,96 @@
-@import '../defaults/colors';
-@import '../defaults/breakpoints';
+@import "../defaults/colors";
 
 header {
+  padding-top: 1.4rem;
+  text-align: center;
+
+  background-color: $color-primary;
+  width: 100vw;
+  .logo {
+    // background-color: $color-primary;
+    margin-bottom: 1.6rem;
    
-    padding-top: 1.4rem;
-     text-align: center;
+    a {
     
-     background-color: $color-primary;
-     .logo {
-         // background-color: $color-primary;
-         margin-bottom: 1.6rem;
-             a{
-                 .fa-medium {
-                     font-size: 1.8rem;
-                 }
-             }
-     }
- 
-     nav {
-         border: 2px solid red;
-         padding: 1.2rem 0;
-         background-color: $color-secondary;
-         display: flex;
-         justify-content: space-around;
-        
+      display: inline-block;
+      transition: ease .2s;
      
-         a {
-             color: $color-main-text;
-             text-decoration: none;
-             font-size: 1.6rem;
-             position: relative;
-             transition: all ease .2s;
- 
-         }
-         a:hover {
-             font-size: 1.3rem;;
-         }
- 
-         a::after  {
-             content: '';
-             position: absolute;
-             bottom: 0;
-             left: 0;
-             height: 3px;
-             width: 100%;
-             background-color: $color-secondary-1;
-             transform: scaleX(0);
-             transform-origin: left;
-             transition: transform .3s;;
-         }
- 
-         a:hover::after {
-             transform: scaleX(1);
-            
-         }
-     }
- }
+      .fa-medium {
+        font-size: 1.8rem;
+     
+      }
+    }
+
+    a:hover {
+      transform: scale(1.4);
+    }
+  }
+
+  nav {
+    border: 2px solid red;
+    padding: 1.2rem 0;
+    background-color: $color-secondary;
+    display: flex;
+    justify-content: space-around;
+
+    a {
+      color: $color-main-text;
+      text-decoration: none;
+      font-size: 1.6rem;
+      position: relative;
+      transition: all ease 0.2s;
+    }
+    a:hover {
+      font-size: 1.3rem;
+    }
+
+    a::after {
+      content: "";
+      position: absolute;
+      bottom: 0;
+      left: 0;
+      height: 3px;
+      width: 100%;
+      background-color: $color-secondary-1;
+      transform: scaleX(0);
+      transform-origin: left;
+      transition: transform 0.3s;
+    }
+
+    a:hover::after {
+      transform: scaleX(1);
+    }
+  }
+}
+
+@media screen and (min-width: 768px) {
+  header {
+
+    .logo {
+        text-align: left;
+        margin-left: 4rem;
+    }
+    nav {
+      justify-content: flex-end;
+
+      a {
+        margin-right: 4rem;
+      }
+    }
+  }
+}
+
+@keyframes blink-logo {
+  0% {
+    opacity: 1;
+  }
+
+  50% {
+    opacity: 0;
+
+  }
+
+  100% {
+    opacity: 1;
+  }
+}

@@ -118,62 +118,87 @@ body {
   justify-content: space-between;
 }
 
-main .about-heading {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  flex-direction: column;
+main section {
+  padding: 0 6rem;
+  text-align: center;
 }
-main .about-heading h1 {
-  border-bottom: 2px solid rgba(0, 0, 200, 0.15);
-  margin: 2rem;
-  padding: 1.2rem;
-}
-main .container {
-  width: 80%;
+main section .container {
+  max-width: 800px;
   margin: 0 auto;
-  padding: 1rem, 2rem;
 }
-main .container .about {
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  flex-wrap: wrap;
+main section .container h2 {
+  font-size: 3.2rem;
+  margin-bottom: 4rem;
+  color: #2b2b2b;
 }
-main .container .about .profile-img {
-  flex: 1;
-  margin-right: 4rem;
-  overflow: hidden;
-  border-radius: 8px;
+main section .container .contact-wrapper {
+  display: grid;
+  grid-template-columns: 1fr;
+  grid-gap: 3rem;
 }
-main .container .about .profile-img img {
+main section .container .contact-wrapper .contact-form {
+  text-align: left;
+}
+main section .container .contact-wrapper .contact-form h3 {
+  font-size: 2rem;
+  margin-bottom: 1.6rem;
+  color: #2b2b2b;
+}
+main section .container .contact-wrapper .contact-form form .form-group {
+  margin-bottom: 2rem;
+}
+main section .container .contact-wrapper .contact-form form .form-group .form-input {
   width: 100%;
-  height: auto;
-  display: block;
-  transition: 1s ease;
+  padding: 1rem;
+  border-radius: 0.8rem;
+  border: none;
+  background-color: rgba(0, 0, 200, 0.15);
+  color: #2b2b2b;
 }
-main .container .about .profile-img img:hover {
-  transform: scale(1.1);
+main section .container .contact-wrapper .contact-form form .form-group .form-input:focus {
+  outline: none;
+  box-shadow: 0 0 16px 1px rgb(108, 67, 185);
 }
-main .container .about .main-text {
-  flex: 1;
+main section .container .contact-wrapper .contact-form form .form-group #text-area {
+  resize: none;
 }
-main .container .about .main-text h2 {
-  font-size: 1.6rem;
+main section .container .contact-wrapper .contact-form form button {
+  display: inline-block;
+  padding: 1.2rem 2rem;
+  background-color: rgba(0, 0, 200, 0.15);
+  color: #2b2b2b;
+  border: none;
+  border-radius: 6px;
+  cursor: pointer;
 }
-main .container .about .main-text p {
-  font-size: 1.2rem;
-  line-height: 1.5;
-}
-main .container .about .main-text a {
-  font-size: 1.3rem;
-}
-main .container .about .main-text a:hover {
+main section .container .contact-wrapper .contact-form form button:hover {
   background-color: rgb(228, 152, 71);
+  transition: ease 0.3s;
+}
+main section .container .contact-wrapper .contact-info {
+  text-align: left;
+}
+main section .container .contact-wrapper .contact-info h3 {
+  font-size: 2rem;
+  color: #2b2b2b;
+}
+main section .container .contact-wrapper .contact-info p {
+  margin-bottom: 1rem;
+  font-size: 1.2rem;
+}
+main section .container .contact-wrapper .contact-info i {
+  margin-right: 1rem;
+  font-size: 1.6rem;
+  padding-right: 3rem;
+  padding-bottom: 1.6rem;
 }
 
-@media screen and (max-width: 800px) {
-  .about {
-    flex-direction: column;
+@media screen and (min-width: 768px) {
+  main section .container {
+    padding: 2rem;
   }
-}/*# sourceMappingURL=about.css.map */
+  main section .container .contact-wrapper {
+    grid-template-columns: repeat(2, 1fr);
+    grid-gap: 3rem;
+  }
+}/*# sourceMappingURL=contact.css.map */

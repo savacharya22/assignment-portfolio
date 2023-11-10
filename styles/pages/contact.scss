@@ -1,0 +1,121 @@
+@import "../../index.scss";
+
+
+main {
+
+    section {
+      
+        padding: 0 6rem;
+        text-align: center;
+
+        .container {
+            max-width: 800px;
+            margin: 0 auto;
+
+            h2 {
+                font-size: 3.2rem;
+                margin-bottom: 4rem;
+                color: $color-main-text;
+            }
+
+            .contact-wrapper {
+                display: grid;
+                grid-template-columns: 1fr;
+                grid-gap: 3rem;
+
+                .contact-form {
+                    text-align: left;
+
+                    h3 {
+                        font-size: 2rem;
+                        margin-bottom: 1.6rem;
+                        color: $color-main-text;
+                    }
+
+                    form {
+                        .form-group {
+                            margin-bottom: 2rem;;
+
+                            .form-input {
+                                width: 100%;
+                                padding: 1rem;
+                            
+                                border-radius: 0.8rem;
+                                border: none;
+                                background-color: $color-border-light;
+                                color: $color-main-text;
+                            }
+
+                            .form-input:focus {
+                                outline: none;
+                                box-shadow: 0 0 16px 1px $color-secondary-1;
+                            }
+
+                            #text-area {
+                                resize: none;
+                                
+                            }
+                        }
+
+                        button {
+                            display: inline-block;
+                            padding: 1.2rem 2rem;
+                            background-color: $color-border-light;
+                            color: $color-main-text;
+                            border: none;
+                            border-radius: 6px;
+                            cursor: pointer;
+                           
+                        }
+                        
+                        button:hover {
+                          background-color: $color-primary;
+                          transition: ease 0.3s;
+                        }
+                    }
+                }
+
+                .contact-info {
+                    text-align: left;
+                    h3 {
+                        font-size: 2rem;
+                        color: $color-main-text;
+                    }
+
+                    p {
+                        margin-bottom: 1rem;
+                        font-size: 1.2rem;
+                    }
+
+                    i {
+                        margin-right: 1rem;
+                        font-size: 1.6rem;
+                        padding-right: 3rem;
+                        padding-bottom: 1.6rem;
+                    }
+                }
+            }
+        }
+    }
+}
+
+@media screen and (min-width: 768px) {
+
+    main {
+        section {
+
+            .container {
+
+                padding: 2rem;
+                .contact-wrapper {
+                    grid-template-columns: repeat(2, 1fr);
+                    grid-gap: 3rem;
+                }
+            }
+
+        }
+    }
+
+}
+
+
