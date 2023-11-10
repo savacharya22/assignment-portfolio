@@ -75,6 +75,7 @@ main {
             overflow: hidden;
             transition: all 0.6s ease;
             display: block;
+            cursor: pointer;
           }
           img:hover {
             transform: scale((1.1));

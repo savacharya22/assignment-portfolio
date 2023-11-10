@@ -178,6 +178,7 @@ main section .main-container .img-container .main-image img {
   overflow: hidden;
   transition: all 0.6s ease;
   display: block;
+  cursor: pointer;
 }
 main section .main-container .img-container .main-image img:hover {
   transform: scale(1.1);
