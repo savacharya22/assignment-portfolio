@@ -9,15 +9,13 @@ header {
   .logo {
     // background-color: $color-primary;
     margin-bottom: 1.6rem;
-   
+
     a {
-    
       display: inline-block;
-      transition: ease .2s;
-     
+      transition: ease 0.2s;
+
       .fa-medium {
         font-size: 1.8rem;
-     
       }
     }
 
@@ -65,10 +63,9 @@ header {
 
 @media screen and (min-width: 768px) {
   header {
-
     .logo {
-        text-align: left;
-        margin-left: 4rem;
+      text-align: left;
+      margin-left: 4rem;
     }
     nav {
       justify-content: flex-end;
@@ -77,20 +74,5 @@ header {
         margin-right: 4rem;
       }
     }
-  }
-}
-
-@keyframes blink-logo {
-  0% {
-    opacity: 1;
-  }
-
-  50% {
-    opacity: 0;
-
-  }
-
-  100% {
-    opacity: 1;
   }
 }
