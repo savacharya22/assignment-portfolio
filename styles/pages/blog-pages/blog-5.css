@@ -329,5 +329,5 @@ main .blog .blog-container .blog-box .blog-text p:has(~ .expand-btn:checked) {
 }
 
 main .blog .blog-container .blog-box {
-  width: 70vw;
+  width: 60vw;
 }/*# sourceMappingURL=blog-5.css.map */

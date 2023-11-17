@@ -107,6 +107,9 @@ body {
   justify-content: space-between;
 }
 
+main {
+  height: 60vh;
+}
 main .about-heading {
   display: flex;
   justify-content: center;
@@ -119,7 +122,7 @@ main .about-heading h1 {
   padding: 1.2rem;
 }
 main .container {
-  width: 80%;
+  width: 60%;
   margin: 0 auto;
   padding: 1rem, 2rem;
 }
