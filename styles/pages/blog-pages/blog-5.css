@@ -326,8 +326,4 @@ main .blog .blog-container .blog-box .blog-text p:has(~ .expand-btn:checked) {
 }
 .btn-div a:hover {
   background-color: rgba(0, 0, 200, 0.15);
-}
-
-main .blog .blog-container .blog-box {
-  width: 60vw;
 }/*# sourceMappingURL=blog-5.css.map */
